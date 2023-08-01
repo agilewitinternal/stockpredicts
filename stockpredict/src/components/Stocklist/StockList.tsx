@@ -17,7 +17,7 @@ const StockList = () => {
         //     const res = await getStocks("aapl");
         //     dispatch(setNewUser(res));
         // }
-        const LIST = [
+        const LIST: any = [
             {
                 "avgTotalVolume": 534152,
                 "calculationPrice": "close",
