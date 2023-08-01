@@ -2,7 +2,6 @@ import React from 'react';
 
 const StockRow = (props: any) => {
     const { rowStock } = props
-    console.log("TESTq=====",rowStock)
   return (
     rowStock?.length> 0 && rowStock.map((list:any) => {
         const date:string = new Date(list?.latestTime)?.toLocaleDateString()
