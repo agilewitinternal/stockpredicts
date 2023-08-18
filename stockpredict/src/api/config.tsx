@@ -1,6 +1,7 @@
 const apiConfig = {
-baseUrl : `${process.env.REACT_APP_IEX_BASE_URL}`,
-apiKey: `${process.env.REACT_APP_PUBLIC_API_KEY}`
+baseUrl : `${process.env.REACT_APP_TOP_GAINERS_BASE_URL}`,
+apiKey: `${process.env.REACT_APP_TOP_GAINERS_API_KEY}`,
+apiHost: `${process.env.REACT_APP_TOP_GAINERS_API_HOST}`
 }
 
 

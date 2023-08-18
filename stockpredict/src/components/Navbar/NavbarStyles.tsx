@@ -26,6 +26,7 @@ export const NavbarContainer = styled(Container)`
 	display: flex;
 	justify-content: start;
 	height: 80px;
+	background-color: white;
 
 	${Container}
 `;
