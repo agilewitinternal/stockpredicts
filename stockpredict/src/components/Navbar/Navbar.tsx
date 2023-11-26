@@ -14,7 +14,7 @@ import {
 } from './NavbarStyles';
 import { useLocation, useNavigate} from 'react-router-dom';
 import { data } from '../../data/NavbarData';
-import logo from "../../assets/logo.png"
+import logo from "../../Images/Logo/SVG Vector Files/Original Logo.svg"
 
 const Navbar = () => {
 	const [show, setShow]: any = useState(false);
@@ -48,7 +48,7 @@ const Navbar = () => {
 			<Nav>
 				<NavbarContainer>
 					<NavLogo to="/">
-						<NavIcon src={logo} alt="logo" />
+						<NavIcon src={logo} alt="PtockPredicts_logo" />
 					</NavLogo>
 					<MobileIcon onClick={handleClick}>
 						{show ? <FaTimes style = {{color:"rgb(169 114 114)"}} /> : <CgMenuRight style = {{color:"rgb(169 114 114)"}} />}
