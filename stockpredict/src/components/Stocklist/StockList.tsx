@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import StockRow from '../Stockrow/StockRow';
+import StockRow from '../stockrows/StockRow';
 import { getStocks } from '../../api/stockService';
 import { useDispatch, useSelector } from 'react-redux';
 import { setNewUser } from '../../redux/actions/homeActions';

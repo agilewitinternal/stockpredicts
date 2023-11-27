@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Container } from '../../globalStyles';
 import { Link } from 'react-router-dom';
 
 type Custom = {
@@ -15,19 +14,18 @@ export const Nav = styled.nav`
 	align-items: center;
 	font-size: 1.2rem;
 	position: fixed;
-	top: 0;
+	top: 2%;
 	z-index: 50;
 	width: 100%;
 
 	transition: background-color 0.3s ease-in;
 `;
 
-export const NavbarContainer = styled(Container)`
+export const NavbarContainer = styled.div`
 	display: flex;
 	justify-content: start;
 	height: 80px;
-
-	${Container}
+	width:80%
 `;
 
 export const NavLogo = styled(Link)`
@@ -43,7 +41,7 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled.img`
 	margin-right: 1rem;
-	width: 15rem;
+	width: 100%;
 	margin-top: 25px;
 `;
 
@@ -58,13 +56,14 @@ export const MobileIcon = styled.div`
 		top: 0;
 		right: 0;
 		transform: translate(-100%, 60%);
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 		cursor: pointer;
 	}
 `;
 
 export const NavMenu = styled.ul<Custom>`
 	display: flex;
+	gap:6.3em;
 	align-items: center;
 	list-style: none;
 	text-align: center;
@@ -105,12 +104,15 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled.span`
-	color: #422cbc;
+	color: #000;
+	font-weight: bold;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
 	padding: 0.5rem 1rem;
 	height: 100%;
+	font-size: 1.6rem;
+
 
 	&:hover {
 		color: #c8c9d8;
@@ -140,4 +142,42 @@ export const NavBtnLink = styled(Link)`
 	width: 100%;
 	border: none;
 	outline: none;
+`;
+
+export const ProfileImg = styled.img`
+	display:flex;
+`;
+
+export const ProfileButton = styled.button `
+  background-image: linear-gradient(to right, #0377e2, #ad42c7);
+  border: 0px solid;
+  border-radius: 6px;
+  margin: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  padding: 4px;
+  flex-shrink: 0;
+  width: 120px;
+  justify-content: space-between;
+  .HeaderButtonFont {
+	color: #fff;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 400px;
+	line-height: normal;
+	width: 33px;
+	height: 20px;
+  }
+  .HeaderLogo {
+	width: 30px;
+	height: 30px;
+	flex-shrink: 0;
+	border-radius: 15px;
+  
+	background: #d9d9d9;
+  }
+  
 `;

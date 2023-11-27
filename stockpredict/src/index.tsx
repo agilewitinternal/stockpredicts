@@ -8,7 +8,7 @@ import { configureStore } from '@reduxjs/toolkit'
 import { compose, applyMiddleware, createStore } from "redux";
 import thunk from 'redux-thunk'
 import  appReducer from '../src/redux/reducers'
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/navbar/Navbar';
 import { BrowserRouter } from 'react-router-dom';
 
 
